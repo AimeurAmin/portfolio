@@ -19,7 +19,14 @@ const GeneralInfo = () => {
       }
     }
   }
-
+  const picVariant = {
+    initial: {
+      scale: 0
+    },
+    animate: {
+      scale: [0, 1.2, 1]
+    }
+  }
   const listVariant = {
     initial: {
      opacity: 0
@@ -38,7 +45,7 @@ const GeneralInfo = () => {
       <motion.div />
       <motion.div 
         className="mypic"
-        variants={listVariant}
+        variants={listVariant, picVariant}
       >
         <motion.img src={mypic} alt="Logo" />
       </motion.div>
