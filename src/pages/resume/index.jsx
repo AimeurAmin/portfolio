@@ -1,10 +1,14 @@
 import React from 'react'
+import Page from '../../components/Page'
+import { StyledResume } from './styles'
 
 const Resume = () => {
   return (
-    <div>
-      resume
-    </div>
+    <Page>
+      <StyledResume>
+        Resume page content
+      </StyledResume>
+    </Page>
   )
 }
 
