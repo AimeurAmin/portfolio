@@ -19,14 +19,7 @@ const GeneralInfo = () => {
       }
     }
   }
-  const picVariant = {
-    initial: {
-      scale: 0
-    },
-    animate: {
-      scale: [0, 1.2, 1]
-    }
-  }
+
   const listVariant = {
     initial: {
      opacity: 0
@@ -45,9 +38,9 @@ const GeneralInfo = () => {
       <motion.div />
       <motion.div 
         className="mypic"
-        variants={listVariant, picVariant} 
+        variants={listVariant}
       >
-        <img src={mypic} alt="Logo" />
+        <motion.img src={mypic} alt="Logo" />
       </motion.div>
 
       <motion.div
@@ -55,11 +48,17 @@ const GeneralInfo = () => {
         variants={listVariant}
       >
         <div className="first-name">
-          <img src={firstname} alt="" />
+          <img src={firstname} alt="first-name" />
         </div>
         <div className="first-name">
-          <img src={lastname} alt="" />
+          <img src={lastname} alt="last-name" />
         </div>
+      </motion.div>
+
+      <motion.div
+        className="contact"
+      >
+
       </motion.div>
     </StyledGeneralInfo>
   )
