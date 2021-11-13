@@ -11,9 +11,5 @@ export const links = [
     id: 3,
     name: 'Projects',
     path: '/projects',
-  },{
-    id: 4,
-    name: 'New Page',
-    path: '/newpage',
   }
 ];
