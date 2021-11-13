@@ -1,8 +1,8 @@
 import React from 'react'
 import {StyledGeneralInfo } from'./GeneralInfo.styled'; // Import regular stylesheet
-import mypic from '../assets/imgs/mypic.png'
-import firstname from '../assets/imgs/firstname.png'
-import lastname from '../assets/imgs/lastname.png'
+import mypic from '../../assets/imgs/mypic.png'
+import firstname from '../../assets/imgs/firstname.png'
+import lastname from '../../assets/imgs/lastname.png'
 import { motion } from 'framer-motion';
 
 const GeneralInfo = () => {
