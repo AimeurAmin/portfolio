@@ -1,3 +1,4 @@
+/* eslint-disable no-sequences */
 import React from 'react'
 import {StyledGeneralInfo } from'./GeneralInfo.styled'; // Import regular stylesheet
 import mypic from '../../assets/imgs/mypic.png'
