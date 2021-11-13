@@ -17,7 +17,7 @@ const NavBar = ({children}) => {
     } else {
       setCurrentPath(location.pathname)
     }
-  }, [location])
+  }, [location, currentPath])
 
   return (
     <StyledNavBar>

@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { links } from '../../utils/links'
