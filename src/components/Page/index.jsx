@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { links } from '../../utils/links'
@@ -7,24 +6,9 @@ import PageContent from '../PageContent'
 import { StyledPage } from './Page.styled'
 
 const Page = ({children}) => {
-  const boxVariants = {
-    initial: {
-      opacity: 0,
-      scale: 0
-    },
-    animate: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delay: 1,
-        duration: .7,
-        when: "beforeChildren", // tells parent to finish animating before children start animating
-        staggerChildren: .6 // time for each child to finish animate
-      }
-    }
-  }
+
   return (
-    <StyledPage as={motion.div} variants={boxVariants} initial="initial" animate="animate">
+    <StyledPage>
       <NavBar>
         {links.map(link => (
           <Link to={link.path}>{link.name}</Link>

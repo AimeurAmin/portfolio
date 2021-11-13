@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const StyledNavBar = styled.div`
+export const StyledNavBar = styled(motion.div)`
   display: flex;
   justify-content: space-between;
   text-decoration: none;
