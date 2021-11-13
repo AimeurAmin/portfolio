@@ -1,15 +1,19 @@
 export const links = [
   {
+    id: 1,
     name: 'About Me',
     path: '/',
-    selected: true
   },{
+    id: 2,
     name: 'Resume',
     path: '/resume',
-    selected: false
   },{
+    id: 3,
     name: 'Projects',
     path: '/projects',
-    selected: false
+  },{
+    id: 4,
+    name: 'New Page',
+    path: '/newpage',
   }
 ];
