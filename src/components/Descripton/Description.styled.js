@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const StyledDescription = styled.div`
+export const StyledDescription = styled(motion.div)`
   background-color: #0F1015;
   padding-inline: calc(144 / 16 * .8rem);
   padding-block-end: calc(20 / 16 * .8rem);
