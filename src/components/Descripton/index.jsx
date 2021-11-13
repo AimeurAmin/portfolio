@@ -18,7 +18,8 @@ const Description = ({paragraphs}) => {
   const descrVariants = {
     initial: {
       opacity: 0,
-      height: 0
+      height: 0,
+      paddingBlock: 0
     },
     animate: {
       opacity: 1,
@@ -31,11 +32,10 @@ const Description = ({paragraphs}) => {
     },
     exit: {
       height: 0,
-      opacity: 0,
+      padding: 0,
       transition: {
         delay: .5,
       }
-
     },
   }
 

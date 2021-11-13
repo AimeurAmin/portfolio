@@ -30,6 +30,18 @@ const NavBar = ({children}) => {
     }
   }, [location])
 
+  const linkVariants = {
+    initial: {
+      opacity: 0
+    },
+    animate: {
+      opacity: 1
+    },
+    exit: {
+      opacity: 0
+    }
+  }
+
   return (
     <StyledNavBar>
       <motion.div
@@ -45,9 +57,14 @@ const NavBar = ({children}) => {
       </motion.div>
       <div className="other-pages">
         {children.map((item, index) => (currentPath !== item.props.to && (
-          <div key={index}>
+          <motion.div key={item.id}
+            variants={linkVariants}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+          >
             {item}
-          </div>
+          </motion.div>
         )))}
       </div>
     </StyledNavBar>

@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { links } from '../../utils/links'
@@ -6,12 +7,11 @@ import PageContent from '../PageContent'
 import { StyledPage } from './Page.styled'
 
 const Page = ({children}) => {
-
   return (
     <StyledPage>
       <NavBar>
-        {links.map(link => (
-          <Link to={link.path}>{link.name}</Link>
+        {links.map(({path, name}) => (
+          <Link to={ path } > {name} </Link>
         ))}
       </NavBar>
       {children?.length !==undefined ? children?.map(item => !item.props.stickToNav ? (

@@ -10,6 +10,7 @@ export const StyledNavBar = styled(motion.div)`
   background-color: #0F1015;
   border-top-left-radius: calc(25 / 16 * .8rem);
   border-top-right-radius: calc(25 / 16 * .8rem);
+  height: calc(50/ 16 * .8rem);
   a, a:focus {
     text-decoration: none;
     color: white;
