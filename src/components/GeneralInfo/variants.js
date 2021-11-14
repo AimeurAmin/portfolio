@@ -29,3 +29,17 @@ export const listVariant = {
     opacity: 1,
   }
 }
+
+export const hireMeIconVariants = {
+  rest: { ease: "linear", duration: 4, type: "tween" },
+  hover: {
+    rotate: 360,
+    scale: [1, .7, 1],
+    transition: {
+      duration: 4,
+      type: "tween",
+      ease: "linear",
+      repeat: Infinity
+    }
+  }
+};
