@@ -1,9 +1,10 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 import { StyledBadge } from './Badge.styled'
 
-const Badge = ({children, className}) => {
+const Badge = ({children, className, variants}) => {
   return (
-    <StyledBadge className={className}>
+    <StyledBadge as={motion.div} variants={variants} className={className}>
       {children}
     </StyledBadge>
   )
