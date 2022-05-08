@@ -3,4 +3,4 @@ This project was created to showcase my experience in react developement, full u
 
 ## Link to visit the current version
 
-[deployed on vercel - click to check](https://portfolio-98grke25d-aimeuramin.vercel.app)
+[deployed on vercel - click to check](https://aimeur-amin.vercel.app/)
