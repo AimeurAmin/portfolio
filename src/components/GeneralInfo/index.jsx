@@ -67,7 +67,7 @@ const GeneralInfo = () => {
         </div>
         <p className="email">m.amin.aimeur@gmail.com</p>
         <p className="phone">+213-552-551-812</p>
-        <p className="phone">+213-779-368-024</p>
+        <p className="phone">+213-676-784-935</p>
       </motion.div>
 
       <motion.div variants={listVariant} className="hire-me-container">
